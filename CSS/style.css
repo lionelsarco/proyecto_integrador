@@ -51,7 +51,7 @@ nav a {
          
 }
 nav a:hover {
-    color: #211b42;
+    color: #5d42f5;
     }
 
 nav ul{
@@ -128,7 +128,7 @@ hr {
     height: 7px;
     width: 80%;
     border: 0px;
-    background-color: rgb(235, 226, 226);
+    background-color: rgb(14, 11, 11);
 }
 
 .section_espacios{
