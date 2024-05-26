@@ -5,6 +5,7 @@ body{
     padding: 0%;
     font-family:  'Roboto', Arial, sans-serif;
     min-width: 100vh;
+
 }
 
 header{
@@ -30,10 +31,9 @@ header{
 nav{
     display: flex;
     flex-direction: row;
-    display: flex;
     justify-content: space-between; /* Alinea el contenido en los extremos */
     align-items: center; /* Centra verticalmente */
-    background-color: #333; /* Color de fondo del navbar */
+    background-color: #333; /* Color de fondo del nav*/
     color: #fff; /* Color del texto */
     padding: 10px 20px; /* Espaciado interno */
  }
@@ -56,7 +56,6 @@ nav a:hover {
 
 nav ul{
     width: 30%;
-    display: flex;
     align-items: baseline;
     display: flex; /* Flexbox para alinear horizontalmente */
     list-style-type: none; /* Quita la viñeta de la lista */
@@ -69,11 +68,11 @@ nav ul{
     margin-right: 20px; /* Espaciado entre elementos del menú */
 }
 .container_slider {
-    width: 90%;
-    max-width: 800px;
     margin: auto;
     position: relative;
-
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px auto;
   
 }
 
@@ -281,12 +280,41 @@ footer ul li a{
  .facebook :hover {
      color: #1877F2;
     }
-  .instagram :hover {
+.instagram :hover {
     background: linear-gradient(45deg, #833AB4, #E1306C, #F77737, #FCAF45);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-           
-       }
-       .whatsap:hover {
+  }
+ .whatsap:hover {
         color: #25D366;
        }
+       
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .name_titulo {
+        margin-bottom: 10px;
+    }
+    
+    .container_btn {
+        top: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo_intro {
+        font-size: 24px;
+    }
+    
+    .intro {
+        font-size: 16px;
+    }
+    
+    .flexContainer {
+        flex-direction: column;
+    }
+}
